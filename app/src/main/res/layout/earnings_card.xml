@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:padding="10dp"
+
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:weightSum="100">
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:rowCount="6">
+
+                <!--Column Titles-->
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_rowTitleTextViewWidth"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="0"
+                    android:layout_columnWeight="20"
+                    android:layout_gravity="top|start"
+                    android:layout_row="0"
+                    android:gravity="start|center_vertical"
+                    android:text="EARNING"
+                    android:textSize="@dimen/payStub_columnTitleTextSize" />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_rateTextViewWidth"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="1"
+                    android:layout_columnWeight="15"
+                    android:layout_gravity="top|center"
+                    android:layout_row="0"
+                    android:gravity="center"
+                    android:text="RATE"
+                    android:textSize="@dimen/payStub_columnTitleTextSize" />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_hoursTextViewWidth"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="2"
+                    android:layout_columnWeight="15"
+                    android:layout_gravity="top|center"
+                    android:layout_row="0"
+                    android:gravity="center"
+                    android:text="HOURS"
+
+                    android:textSize="@dimen/payStub_columnTitleTextSize" />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_totalTextViewWidth"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="3"
+                    android:layout_columnWeight="10"
+                    android:layout_gravity="top|center"
+                    android:layout_row="0"
+                    android:gravity="center"
+                    android:text="TOTAL"
+                    android:textSize="@dimen/payStub_columnTitleTextSize" />
+
+
+
+                <!--Regular Pay-->
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_rowTitleTextViewWidth"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="0"
+
+                    android:layout_gravity="top|start"
+                    android:layout_row="1"
+                    android:gravity="start|center_vertical"
+                    android:text="Regular "
+                    android:textSize="@dimen/payStub_rowTitleTextSize" />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_rateTextViewWidth"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="1"
+                    android:layout_gravity="top|center"
+                    android:layout_row="1"
+                    android:background="@drawable/display_rectangle"
+                    android:gravity="center"
+                    android:minWidth="60dp"
+                    android:padding="@dimen/payStub_displayTextPadding"
+                    android:text="47.25"
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_hoursTextViewWidth"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="2"
+                    android:layout_gravity="top|center"
+                    android:layout_row="1"
+
+                    android:background="@drawable/display_rectangle"
+                    android:gravity="center"
+                    android:padding="@dimen/payStub_displayTextPadding"
+                    android:text="102"
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_totalTextViewWidth"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="3"
+                    android:layout_gravity="top|center"
+                    android:layout_row="1"
+                    android:background="@drawable/display_rectangle"
+                    android:gravity="center"
+                    android:padding="@dimen/payStub_displayTextPadding"
+                    android:text="1522.00"
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+
+                <!--Overtime Pay-->
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_rowTitleTextViewWidth"
+
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="0"
+                    android:layout_gravity="top|start"
+                    android:layout_row="2"
+                    android:gravity="start|center_vertical"
+                    android:text="Overtime "
+                    android:textSize="@dimen/payStub_rowTitleTextSize" />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_rateTextViewWidth"
+
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="1"
+                    android:layout_gravity="top|center"
+                    android:layout_row="2"
+                    android:background="@drawable/display_rectangle"
+
+                    android:gravity="center"
+                    android:padding="@dimen/payStub_displayTextPadding"
+                    android:text="7.25"
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_hoursTextViewWidth"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="2"
+                    android:layout_gravity="top|center"
+                    android:layout_row="2"
+
+                    android:background="@drawable/display_rectangle"
+                    android:gravity="center"
+                    android:padding="@dimen/payStub_displayTextPadding"
+                    android:text="72"
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_totalTextViewWidth"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="3"
+                    android:layout_gravity="top|center"
+                    android:layout_row="2"
+                    android:background="@drawable/display_rectangle"
+
+                    android:gravity="center"
+                    android:padding="@dimen/payStub_displayTextPadding"
+                    android:text="522.00"
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+
+                <!--Holiday-->
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_rowTitleTextViewWidth"
+
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="0"
+                    android:layout_gravity="top|start"
+                    android:layout_row="3"
+                    android:gravity="start|center_vertical"
+                    android:text="Holiday "
+                    android:textSize="@dimen/payStub_rowTitleTextSize" />
+
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_hoursTextViewWidth"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="2"
+                    android:layout_gravity="top|center"
+                    android:layout_row="3"
+
+                    android:background="@drawable/display_rectangle"
+                    android:gravity="center"
+                    android:padding="@dimen/payStub_displayTextPadding"
+                    android:text="8"
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_totalTextViewWidth"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="3"
+                    android:layout_gravity="top|center"
+                    android:layout_row="3"
+                    android:background="@drawable/display_rectangle"
+
+                    android:gravity="center"
+                    android:padding="@dimen/payStub_displayTextPadding"
+                    android:text="$50"
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+
+                <!--Paid Time Off-->
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_rowTitleTextViewWidth"
+
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="0"
+                    android:layout_gravity="top|start"
+                    android:layout_row="4"
+                    android:gravity="start|center_vertical"
+                    android:text="PTO "
+                    android:textSize="@dimen/payStub_rowTitleTextSize" />
+
+
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_hoursTextViewWidth"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="2"
+                    android:layout_gravity="top|center"
+                    android:layout_row="4"
+
+                    android:background="@drawable/display_rectangle"
+                    android:gravity="center"
+                    android:padding="@dimen/payStub_displayTextPadding"
+                    android:text="24"
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_totalTextViewWidth"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="3"
+                    android:layout_gravity="top|center"
+                    android:layout_row="4"
+                    android:background="@drawable/display_rectangle"
+
+                    android:gravity="center"
+                    android:padding="@dimen/payStub_displayTextPadding"
+                    android:text="174.00"
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+
+                <!--Totals-->
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_rowTitleTextViewWidth"
+
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="0"
+                    android:layout_gravity="top|start"
+                    android:layout_row="5"
+                    android:gravity="start|center_vertical"
+                    android:text="Totals "
+                    android:textSize="@dimen/payStub_rowTitleTextSize" />
+
+
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_hoursTextViewWidth"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="2"
+                    android:layout_gravity="top|center"
+                    android:layout_row="5"
+
+                    android:background="@drawable/display_rectangle"
+                    android:gravity="center"
+                    android:padding="@dimen/payStub_displayTextPadding"
+                    android:text="200"
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="@dimen/payStub_totalTextViewWidth"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="3"
+                    android:layout_gravity="top|center"
+                    android:layout_row="5"
+                    android:background="@drawable/display_rectangle"
+
+                    android:gravity="center"
+                    android:padding="@dimen/payStub_displayTextPadding"
+                    android:text="4,000.00"
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+
+
+            </GridLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout></android.support.v7.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+
+
+            <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4"
+                android:rowCount="2">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="0"
+                    android:layout_gravity="top|start"
+                    android:layout_row="0"
+                    android:gravity="center_vertical|end"
+                    android:padding="@dimen/payStub_displayTextPadding"
+                    android:text="Period Start:"
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="1"
+                    android:layout_gravity="top|start"
+                    android:layout_row="0"
+                    android:background="@color/colorAccent"
+                    android:gravity="center_vertical|start"
+                    android:padding="@dimen/payStub_displayTextPadding"
+                    android:text="8/26/17"
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="0"
+                    android:layout_gravity="end"
+                    android:layout_row="1"
+                    android:gravity="center_vertical|end"
+                    android:text="Period End: "
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="1"
+                    android:layout_gravity="top|end"
+                    android:layout_row="1"
+                    android:background="@color/colorAccent"
+                    android:gravity="center_vertical|start"
+                    android:padding="@dimen/payStub_displayTextPadding"
+                    android:text="9/10/17"
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_column="2"
+                    android:layout_gravity="top|end"
+                    android:layout_row="0"
+                    android:gravity="center_vertical|end"
+                    android:padding="5dp"
+                    android:text="Pay Date: "
+                    android:textSize="16sp"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="@dimen/payStub_rowTextViewHeight"
+                    android:layout_column="3"
+                    android:layout_gravity="top|end"
+                    android:layout_row="0"
+                    android:background="@color/colorAccent"
+                    android:gravity="center_vertical|start"
+                    android:padding="@dimen/payStub_displayTextPadding"
+                    android:text="9/15/17"
+                    android:textSize="@dimen/payStub_displayTextSize" />
+
+
+            </GridLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
