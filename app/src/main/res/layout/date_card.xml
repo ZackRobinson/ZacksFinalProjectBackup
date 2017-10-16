@@ -26,20 +26,20 @@
                     android:layout_height="40dp"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="50"
-                    android:text="Pay Date:"
-                    android:textSize="16sp"
-                    android:padding="5dp"
                     android:gravity="end|center_vertical"
-                    />
+                    android:padding="5dp"
+                    android:text="Pay Date:"
+                    android:textSize="16sp" />
 
                 <TextView
+                    android:id="@+id/tvDate_payDate"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:textSize="16sp"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="50"
                     android:gravity="center_vertical|start"
-                    android:text="9/15/17" />
+                    android:text="9/15/17"
+                    android:textSize="16sp" />
 
 
             </LinearLayout>
@@ -52,23 +52,23 @@
 
                 <TextView
                     android:layout_width="wrap_content"
-                android:textSize="16sp"
                     android:layout_height="40dp"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="25"
+                    android:gravity="end|center_vertical"
+                    android:padding="5dp"
                     android:text="Pay Start:"
-                    android:padding="5dp"
-                    android:gravity="end|center_vertical"
-                    />
+                    android:textSize="16sp" />
 
                 <TextView
+                    android:id="@+id/tvDate_startDate"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:textSize="16sp"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="25"
                     android:gravity="center_vertical|start"
-                    android:text="9/15/17" />
+                    android:text="9/15/17"
+                    android:textSize="16sp" />
 
 
                 <TextView
@@ -76,23 +76,21 @@
                     android:layout_height="40dp"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="25"
+                    android:gravity="end|center_vertical"
+                    android:padding="5dp"
                     android:text="Pay End:"
-                    android:textSize="16sp"
-                    android:padding="5dp"
-                    android:gravity="end|center_vertical"
-                    />
+                    android:textSize="16sp" />
 
                 <TextView
+                    android:id="@+id/tvDate_endDate"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_gravity="center_vertical"
                     android:layout_weight="25"
-                    android:textSize="16sp"
                     android:gravity="center_vertical|start"
-                    android:text="9/10/17" />
+                    android:text="9/10/17"
+                    android:textSize="16sp" />
             </LinearLayout>
-
-
 
 
         </LinearLayout>
