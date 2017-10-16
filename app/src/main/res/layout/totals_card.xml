@@ -9,8 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:padding="10dp"
-        >
+        android:padding="10dp">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
@@ -22,87 +21,89 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="100"
                 android:layout_margin="10dp"
+                android:layout_weight="100"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_gravity="center_vertical"
+                    android:layout_weight="50"
                     android:gravity="end|center_vertical"
                     android:padding="5dp"
-                    android:layout_weight="50"
                     android:text="Net Pay: "
                     android:textSize="18sp" />
 
                 <TextView
+                    android:id="@+id/tvTotals_netPay"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
-                    android:layout_weight="50"
                     android:layout_gravity="center_vertical"
+                    android:layout_weight="50"
                     android:background="@drawable/display_rectangle"
-
                     android:gravity="center"
                     android:text="$425.00"
                     android:textSize="18sp" />
             </LinearLayout>
+
             <LinearLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="100"
                 android:layout_margin="10dp"
+                android:layout_weight="100"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_gravity="center_vertical"
+                    android:layout_weight="50"
                     android:gravity="end|center_vertical"
                     android:padding="5dp"
                     android:text="Gross Pay YTD: "
-                    android:textSize="18sp"
-                    android:layout_weight="50"
-                    />
+                    android:textSize="18sp" />
 
                 <TextView
+                    android:id="@+id/tvTotals_grossPayYTD"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_gravity="center_vertical"
+                    android:layout_weight="50"
                     android:background="@drawable/display_rectangle"
                     android:gravity="center"
                     android:text="$4,000.00"
-                    android:textSize="18sp"
-                    android:layout_weight="50" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="100"
                 android:layout_margin="10dp"
+                android:layout_weight="100"
                 android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_gravity="center_vertical"
+                    android:layout_weight="50"
                     android:gravity="end|center_vertical"
                     android:padding="5dp"
                     android:text="Net Pay YTD: "
-                    android:textSize="18sp"
-                    android:layout_weight="50"
-                    />
+                    android:textSize="18sp" />
 
                 <TextView
+                    android:id="@+id/tvTotals_netPayYTD"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_gravity="center_vertical"
+                    android:layout_weight="50"
                     android:background="@drawable/display_rectangle"
                     android:gravity="center"
                     android:text="$4,000.00"
-                    android:textSize="18sp"
-                    android:layout_weight="50" />
+                    android:textSize="18sp" />
             </LinearLayout>
 
         </LinearLayout>
